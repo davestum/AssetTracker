@@ -1,0 +1,31 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "controllers": [
+            "AssetTracker"
+        ],
+        "models": [
+            "Asset",
+            "DeviceType",
+            "Dept"
+        ],
+        "name": "AssetTracker",
+        "stores": [
+            "Assets",
+            "DeviceTypes",
+            "Depts"
+        ],
+        "views": [
+            "Mainview",
+            "AssetForm",
+            "AssetList"
+        ]
+    },
+    "name": "Application",
+    "designerId": "application"
+}

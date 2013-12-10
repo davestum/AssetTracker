@@ -1,0 +1,34 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "assetList",
+        "designer|userClassName": "AssetList",
+        "itemId": "assetList",
+        "store": "Assets"
+    },
+    "name": "MyList",
+    "designerId": "94430d28-cd48-46c9-baf8-99c8a9568966",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "itemTpl",
+                "implHandler": [
+                    "<div>{name},{serial}</div>"
+                ]
+            },
+            "name": "itemTpl",
+            "designerId": "f103616e-bd91-4fa3-825a-d2e53011b015"
+        }
+    ]
+}

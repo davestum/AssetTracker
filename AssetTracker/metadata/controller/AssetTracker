@@ -1,0 +1,173 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "AssetTracker",
+        "requires": [
+            "Ext.MessageBox"
+        ]
+    },
+    "name": "MyController",
+    "designerId": "cea7b54d-d4de-4332-b450-d1ae387d5fd1",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "button#saveBtn",
+                "designer|targetType": "Ext.Button",
+                "fn": "onSaveBtnTap",
+                "implHandler": [
+                    "var me = this;",
+                    "",
+                    "var fp = me.getAssetForm();",
+                    "",
+                    "var mod = fp.getRecord();",
+                    "",
+                    "if (mod) {",
+                    "    fp.updateRecord(mod);",
+                    "} else {",
+                    "    mod = Ext.create('AssetTracker.model.Asset');",
+                    "    fp.updateRecord(mod);",
+                    "    Ext.getStore('Assets').add(mod);",
+                    "}",
+                    "",
+                    "Ext.Msg.alert('Success', 'Your info was saved successfully', function(){",
+                    "    me.clearAssetForm();",
+                    "});"
+                ],
+                "name": "tap"
+            },
+            "name": "onSaveBtnTap",
+            "designerId": "b89da247-631e-43af-8b74-c8ea385a13bb"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "assetForm",
+                "selector": "assetform"
+            },
+            "name": "assetForm",
+            "designerId": "c395702a-6018-4213-8c38-379095984d1f"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "clearAssetForm",
+                "implHandler": [
+                    "var fp = this.getAssetForm();",
+                    "",
+                    "fp.setValues({",
+                    "    name: '',",
+                    "    serial: '',",
+                    "    deviceType: 1,",
+                    "    dept: 1",
+                    "});",
+                    "",
+                    "fp.setRecord(null);"
+                ]
+            },
+            "name": "clearAssetForm",
+            "designerId": "e6a87a43-6a05-4be9-94e2-b5138ed7adce"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "button#newBtn",
+                "designer|targetType": "Ext.Button",
+                "fn": "onNewBtnTap",
+                "implHandler": [
+                    "this.clearAssetForm();"
+                ],
+                "name": "tap"
+            },
+            "name": "onNewBtnTap",
+            "designerId": "a33d16dd-b0d9-434e-98aa-1614b0074fb6"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "list#assetList",
+                "designer|targetType": "Ext.dataview.List",
+                "fn": "onAssetListItemTap",
+                "implHandler": [
+                    "this.getAssetForm().setRecord(record);",
+                    "this.getTopTabBar().setActiveTab(0);"
+                ],
+                "name": "itemtap"
+            },
+            "name": "onAssetListItemTap",
+            "designerId": "acc68cd7-3cd7-4a18-8206-a85eceae741c"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "topTabBar",
+                "selector": "tabbar"
+            },
+            "name": "topTabBar",
+            "designerId": "af2d6be0-687e-4e3f-b2ac-d7be6c113933"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "button#deleteBtn",
+                "designer|targetType": "Ext.Button",
+                "fn": "onDeleteBtnTap",
+                "implHandler": [
+                    "var fp = this.getAssetForm();",
+                    "var mod = fp.getRecord();",
+                    "",
+                    "if (mod)",
+                    "{",
+                    "    var as = Ext.getStore('Assets');",
+                    "    as.remove(mod);",
+                    "    this.getTopTabBar().setActiveTab(1);",
+                    "    this.clearAssetForm();",
+                    "}"
+                ],
+                "name": "tap"
+            },
+            "name": "onDeleteBtnTap",
+            "designerId": "a3b1ece8-0c00-423e-9be5-2baa37baab13"
+        }
+    ]
+}

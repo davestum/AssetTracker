@@ -1,0 +1,33 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[{",
+            "    \"id\":1,",
+            "    \"name\": \"Engineering\"",
+            "},{",
+            "    \"id\":2,",
+            "    \"name\": \"Finance\"",
+            "},{",
+            "    \"id\":3,",
+            "    \"name\": \"HR\"",
+            "},{",
+            "    \"id\":4,",
+            "    \"name\": \"Sales\"",
+            "},{",
+            "    \"id\":5,",
+            "    \"name\": \"Marketing\"",
+            "}]"
+        ],
+        "designer|userClassName": "Depts",
+        "model": "Dept",
+        "storeId": "Depts"
+    },
+    "name": "MyStore1",
+    "designerId": "9feab894-374f-4359-9e0f-7ce5f0109f0c"
+}

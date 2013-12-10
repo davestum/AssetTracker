@@ -1,0 +1,66 @@
+{
+    "name": "AssetTracker",
+    "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "4.0.1.45",
+            "frameworkVersion": "2.3.0.328"
+        },
+        "canvasControls": {
+            "viewportSize": {
+                "name": "iPhone",
+                "builtIn": true,
+                "height": 480,
+                "width": 320
+            },
+            "viewportOrientation": "portrait"
+        },
+        "urlPrefix": "http://localhost/AssetTracker/AssetTracker",
+        "exportPath": "",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "displayfield-ExtBox1-1316-inputEl": "Not Installed",
+        "lastBuildSelection": {
+            "value": "webBuild",
+            "display": "Build web app"
+        },
+        "displayfield-ExtBox1-1270-inputEl": "Not Installed"
+    },
+    "xdsVersion": "3.0.1",
+    "xdsBuild": 0,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000004,
+    "framework": "touch23",
+    "viewOrderMap": {
+        "view": [
+            "c5de8bc7-da81-4057-9609-4bbbfd7d73b7",
+            "e357ce57-4385-4019-b0e9-19ff3d5cfaaa",
+            "94430d28-cd48-46c9-baf8-99c8a9568966"
+        ],
+        "store": [
+            "881ab697-e019-4586-94ee-efaba3dc84fc",
+            "5fabc81d-a79e-425b-9231-0d597777c418",
+            "9feab894-374f-4359-9e0f-7ce5f0109f0c"
+        ],
+        "controller": [
+            "cea7b54d-d4de-4332-b450-d1ae387d5fd1"
+        ],
+        "model": [
+            "38d5f5a8-a811-45e9-bd4f-62065033e0e8",
+            "33c3adba-0465-4f6b-bc32-9d6033c5f18f",
+            "45b6c83e-1618-4adc-9da0-9f520060c923"
+        ],
+        "resource": [
+            "e9770b3f-2487-47d4-94be-b319f36210f4",
+            "5ca88ea6-0485-4987-9fb4-cecbcea40947"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

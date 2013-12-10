@@ -1,0 +1,82 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Asset"
+    },
+    "name": "MyModel",
+    "designerId": "38d5f5a8-a811-45e9-bd4f-62065033e0e8",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name"
+            },
+            "name": "field",
+            "designerId": "dbf7ed52-0878-4143-b730-75babf01fce5"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "serial"
+            },
+            "name": "field1",
+            "designerId": "d568411d-4634-4c30-97fb-7b982aa6c621"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "deviceType",
+                "type": "int"
+            },
+            "name": "field2",
+            "designerId": "ac023d37-05ab-47f0-8911-b13af428c272"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "dept",
+                "type": "int"
+            },
+            "name": "field3",
+            "designerId": "1843156a-1132-4dfb-b4de-b774167113f2"
+        },
+        {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "Asset-Trk"
+            },
+            "name": "MyLocalStorageProxy",
+            "designerId": "ba9d0184-968f-4cd8-bc61-27317dcb275f"
+        }
+    ]
+}

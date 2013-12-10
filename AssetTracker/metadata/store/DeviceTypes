@@ -1,0 +1,33 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[{",
+            "    \"id\":1,",
+            "    \"name\": \"PC\"",
+            "},{",
+            "    \"id\":2,",
+            "    \"name\": \"Mac\"",
+            "},{",
+            "    \"id\":3,",
+            "    \"name\": \"iPhone\"",
+            "},{",
+            "    \"id\":4,",
+            "    \"name\": \"iPad\"",
+            "},{",
+            "    \"id\":5,",
+            "    \"name\": \"Android\"",
+            "}]"
+        ],
+        "designer|userClassName": "DeviceTypes",
+        "model": "DeviceType",
+        "storeId": "DeviceTypes"
+    },
+    "name": "MyStore",
+    "designerId": "5fabc81d-a79e-425b-9231-0d597777c418"
+}

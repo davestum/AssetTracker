@@ -1,0 +1,173 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "assetform",
+        "designer|userClassName": "AssetForm",
+        "layout": "fit"
+    },
+    "name": "MyFormPanel",
+    "designerId": "e357ce57-4385-4019-b0e9-19ff3d5cfaaa",
+    "cn": [
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Asset"
+            },
+            "name": "MyFieldSet",
+            "designerId": "2d875249-6f4e-498e-bce4-c280fbee4a3b",
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Name",
+                        "name": "name"
+                    },
+                    "name": "MyTextField",
+                    "designerId": "8fd43795-eafd-4eb3-aa39-47a73575a499"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Serial",
+                        "name": "serial"
+                    },
+                    "name": "MyTextField1",
+                    "designerId": "b5f21079-6362-46be-a39e-028a3898546a"
+                },
+                {
+                    "type": "Ext.field.Select",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayField": "name",
+                        "label": "Device",
+                        "name": "deviceType",
+                        "store": "DeviceTypes",
+                        "valueField": "id"
+                    },
+                    "name": "MySelectField",
+                    "designerId": "972238ab-e2f5-4f87-babb-dab94c176f80"
+                },
+                {
+                    "type": "Ext.field.Select",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayField": "name",
+                        "id": null,
+                        "label": "Dept",
+                        "name": "dept",
+                        "store": "Depts",
+                        "valueField": "id"
+                    },
+                    "name": "MySelectField1",
+                    "designerId": "e7d50c9a-321e-4d4b-9902-63ffeb4d2d0a"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom"
+            },
+            "name": "MyToolbar",
+            "designerId": "8633507a-f880-4a5e-8d83-9211a04ea6b7",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "newBtn",
+                        "text": "New"
+                    },
+                    "name": "MyButton",
+                    "designerId": "c26ddf16-dd23-4fac-bdb2-49f541d810b4"
+                },
+                {
+                    "type": "Ext.Spacer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "MySpacer",
+                    "designerId": "a6071c0b-5a5f-42e6-9cfa-91462241ba85"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "deleteBtn",
+                        "text": "Delete"
+                    },
+                    "name": "MyButton1",
+                    "designerId": "6ec9f6dd-01fb-44ca-a230-edaff92a2ec0"
+                },
+                {
+                    "type": "Ext.Spacer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "MySpacer1",
+                    "designerId": "d11fef34-eca0-415d-8a06-bff4533543c1"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": null,
+                        "itemId": "saveBtn",
+                        "text": "Save"
+                    },
+                    "name": "MyButton2",
+                    "designerId": "5287d7af-903a-4119-a367-63d1ef2f5629"
+                }
+            ]
+        }
+    ]
+}

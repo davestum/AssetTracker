@@ -1,0 +1,115 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|userAlias": "Mainview",
+        "designer|userClassName": "Mainview",
+        "layout": "fit"
+    },
+    "name": "MyContainer",
+    "designerId": "c5de8bc7-da81-4057-9609-4bbbfd7d73b7",
+    "cn": [
+        {
+            "type": "Ext.TitleBar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "title": "Asset Tracker"
+            },
+            "name": "MyTitleBar",
+            "designerId": "158b46ea-3679-48f0-b2c3-c7beb47b7618"
+        },
+        {
+            "type": "Ext.tab.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "MyTabPanel",
+            "designerId": "15f931e1-0170-42da-a226-fe2b8d8831fa",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout": "fit",
+                        "title": "Entry"
+                    },
+                    "name": "MyContainer",
+                    "designerId": "00c1a4d2-0ebd-4953-8a7e-6c58be258fdd",
+                    "cn": [
+                        {
+                            "type": "linkedinstance",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "assetform"
+                            },
+                            "name": "assetform",
+                            "designerId": "16c9e2e1-9579-4f61-b85c-a4d505fd65fd",
+                            "masterInstanceId": "e357ce57-4385-4019-b0e9-19ff3d5cfaaa"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout": "fit",
+                        "title": "List"
+                    },
+                    "name": "MyContainer1",
+                    "designerId": "8781059b-2c9b-4bbb-b70f-0aa2213ff489",
+                    "cn": [
+                        {
+                            "type": "linkedinstance",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "assetlist",
+                            "designerId": "71e65c19-d760-4251-8490-c45eb8ff3b90",
+                            "masterInstanceId": "94430d28-cd48-46c9-baf8-99c8a9568966"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.tab.Bar",
+                    "reference": {
+                        "name": "tabBar",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|pack": "center",
+                        "docked": "top"
+                    },
+                    "name": "MyTabBar",
+                    "designerId": "149343b2-7964-4549-b167-4421995554ac"
+                }
+            ]
+        }
+    ]
+}
